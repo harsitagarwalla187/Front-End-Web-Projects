@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Bebas+Neue&family=Rubik+Vinyl&display=swap');
+
+html {
+    box-sizing: content-box;
+}
+
+:root {
+    --black: #000000; 
+    --white: #ffffff;
+    --red: rgba(250, 34, 34, 1);
+    --left: 6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/************************************* Common **************************************/
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 20px 15px;
+    background-color: rgba(250, 34, 34, 1);
+    max-width: 250px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+button:hover {
+    background-color: rgba(250, 34, 34, 0.8);
+}
+
+button:active {
+    scale: 0.95;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/************************************* Scrollbar **************************************/
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--black);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+  }
+  
+/************************************* Header **************************************/
+
+#header {
+    width: 100%;
+    background-color: var(--black);
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+
+#header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#header .logo {
+    font-family: 'Rubik Vinyl', cursive;
+    margin: 20px 40px 20px var(--left);
+    font-size: 40px;
+}
+
+#header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#header ul li {
+    margin: 35px 10px;
+}
+
+/******************************** FOOTER *******************************/
+
+#footer {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+    bottom: 0;
+}
+
+#footer {
+    display: flex;
+}
+
+#footer .items {
+    margin: var(--left);
+}
+
+#footer .items h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 1.5rem;
+}
+
+#footer .items p {
+    margin: 0.8rem auto;
+}
+
+#footer .items i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: 1s;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #fd5949;   
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+/********************************** SIGN UP Page ******************************/
+
+.sign-up {
+    background-color: var(--white);
+    margin: 6rem var(--left);
+} 
+
+.sign-up h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/************************************* Home Page **************************************/
+
+.welcome {
+    height: 100vh;
+    background-image: url(images/p2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.welcome .container {
+    display: flex;
+    flex-direction: column;   
+    position: relative; 
+    top: 30%;
+    left: var(--left);
+    width: 60%;
+}
+
+.welcome .container h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.welcome .container p {
+    margin-bottom: 30px;
+}
+
+/****************************** Classes Section ***************************/
+
+.popular-classes {
+    margin-left: var(--left);
+    font-weight: bolder;
+}
+
+.popular-classes h1 {
+    margin: 5rem auto;
+    font-size: 2rem;
+}
+
+.popular-classes .class {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-classes .image {
+    margin-bottom: 10vh;
+    margin-right: 8vw;
+    width: 40%;
+    height: 50%;
+}
+
+.popular-classes .image .img {
+    width: 100%;
+    height: 85%;
+}
+
+.popular-classes .image p {
+    font-size: 2rem;
+}
+
+/* .popular-classes .btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
+
+/*********************************** ABOUT Section *********************************/
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+.about .container {
+    width: 45%;
+    position: relative;
+    top: 10rem;
+    left: var(--left);
+}
+
+.about .container h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+.about .container p {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+} 
+
+/********************************* Classes Page *********************************/
+
+.class-pg {
+    background-color: var(--black);
+}
+
+.class-container {
+    margin-left: var(--left);
+    margin-right: var(--left);
+}
+
+.class-container .title {
+    color: var(--white);
+    padding-top: 30vh;
+    padding-bottom: 20vh;
+    font-size: 4rem;
+}
+
+.class-container .class-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.class-item .image {
+    margin-bottom: 10vh;
+    margin-right: 8vw;
+    width: 40%;
+    height: 50vh;
+    color: var(--white);
+}
+
+.class-item .image p {
+    font-size: 1.4rem;
+}
+
+/********************************* Prices & Plans Page *********************************/
+
+.prices-and-plans {
+    padding-top: 10rem;
+    padding-left: var(--left);
+    background-color: var(--black);
+    color: var(--white);
+    padding-bottom: 10rem;
+}
+
+.prices-and-plans h1 {
+    font-size: 3rem;
+    margin: 5rem auto;
+}
+
+.prices-and-plans .p-n-p {
+    display: flex;
+}
+
+.prices-and-plans .p-n-p .plans {
+    margin-right: 20rem;
+    width: 20vw;
+}
+
+.prices-and-plans .p-n-p .plans li {
+    margin-left: 1rem;
+}
+
+.prices-and-plans .p-n-p h2 {
+    font-size: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.prices-and-plans .p-n-p h3 {
+    float: right;
+}
+
+.prices-and-plans .p-n-p p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+/********************************* Sign Up Page *********************************/
+.sign-up-pg {
+    background-color: var(--black);
+    padding-left: var(--left);
+    padding-top: 10vh;
+}
+
+.sign-up-pg h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contact-box {
+    display: flex;
+    padding-bottom: 200px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+    border: 2px solid var(--red);
+}
+
+.contact-box form {
+    width: 40%;
+}
+
+.contact-box label {
+    font-size: 1.3rem;
+    color: var(--white);
+}
+
+.contact-box label span {
+    color: var(--red);
+}
+
+.contact-box button {
+    width: 10rem;
+}

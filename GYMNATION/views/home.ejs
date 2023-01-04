@@ -1,0 +1,55 @@
+
+<%- include("partials/header"); -%>
+
+<div class="welcome">
+    <div class="container">
+        <h1>WHAT ARE YOU WAITING FOR?</h1>
+        <P>Empower yourself to make the changes you need to make.</P>
+        <form action="/sign-up" method="get">
+            <button type="submit">LET'S GET STARTED</button>
+        </form>
+    </div>
+</div>
+
+<div class="popular-classes">
+
+    <h1>POPULAR CLASSES</h1>
+
+    <div class="class">
+        <div class="image">
+            <div class="img"><img src="css/images/cardio.jpg" alt="Cardio"></div>
+            <p>Cardio</p>
+        </div>
+        <div class="image">
+            <div class="img"><img src="css/images/lifting.jpg" alt="Lifting"></div>
+            <p>Lifting</p>
+        </div>
+        <div class="image">
+            <div class="img"><img src="css/images/press and back.jpg" alt="Press & Back"></div>
+            <p>Press & Back</p>
+        </div>
+        <div class="image">
+            <div class="img"><img src="css/images/p1.jpg" alt="Abs"></div>
+            <p>Abs</p>
+        </div>
+    </div>
+
+    <form action="/classes" method="get">
+        <button type="submit" >CHECK ALL CLASSES</button>
+    </form>
+</div>
+
+<div class="about">
+    <div class="container">
+        <h1>ABOUT GYMNATION</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione exercitationem officia animi? Placeat, voluptatibus soluta.</p>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero inventore fugit repellat itaque modi perspiciatis blanditiis ab quod reprehenderit, unde commodi a consectetur assumenda? Culpa deserunt dolor voluptatem ut!</P>
+        <form action="/classes">
+            <button type="submit">SCHEDULE</button>
+        </form>
+    </div>
+</div>
+
+<%- include("partials/sign-up"); -%>
+
+<%- include("partials/footer"); -%>
